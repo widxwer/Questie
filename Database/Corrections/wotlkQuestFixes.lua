@@ -7007,34 +7007,6 @@ function QuestieWotlkQuestFixes:Load()
             [questKeys.requiredSourceItems] = {210046,210047},
             [questKeys.zoneOrSort] = 65,
         },
-        [78752] = {
-            [questKeys.name] = "Proof of Demise: Titan Rune Protocol Gamma",
-            [questKeys.startedBy] = {{20735},nil,nil},
-            [questKeys.finishedBy] = {{20735},nil,nil},
-            [questKeys.requiredLevel] = 80,
-            [questKeys.questLevel] = 80,
-            [questKeys.requiredRaces] = raceIDs.NONE,
-            [questKeys.objectivesText] = {"The Lich King's presence mustn't extend any further!","","The Council of Six has decreed that any strong enough fighter should take up arms and aid in keeping Azeroth safe!"},
-            [questKeys.objectives] = {nil,nil,{{211206}}},
-            [questKeys.zoneOrSort] = 4395,
-            [questKeys.questFlags] = 4232,
-            [questKeys.specialFlags] = 1,
-            [questKeys.reputationReward] = {{factionIDs.KIRIN_TOR,75}},
-        },
-        [78753] = {
-            [questKeys.name] = "Proof of Demise: Threats to Azeroth",
-            [questKeys.startedBy] = {{20735},nil,nil},
-            [questKeys.finishedBy] = {{20735},nil,nil},
-            [questKeys.requiredLevel] = 80,
-            [questKeys.questLevel] = 80,
-            [questKeys.requiredRaces] = raceIDs.NONE,
-            [questKeys.objectivesText] = {"We must continue putting pressure on all fronts!","","The Council of Six has decreed that any willing fighter should take up arms and aid in keeping Azeroth safe!"},
-            [questKeys.objectives] = {nil,nil,{{211207}}},
-            [questKeys.zoneOrSort] = 4395,
-            [questKeys.questFlags] = 4232,
-            [questKeys.specialFlags] = 1,
-            [questKeys.reputationReward] = {{factionIDs.KIRIN_TOR,75}},
-        },
     }
 end
 
@@ -7080,8 +7052,4 @@ function _QuestieWotlkQuestFixes:InsertMissingQuestIds()
     QuestieDB.questData[78219] = {} -- A New Beginning
     QuestieDB.questData[78220] = {} -- Tools for Survival
     QuestieDB.questData[78221] = {} -- Combat Training
-
-    -- P4 quests
-    QuestieDB.questData[78752] = {} -- Proof of Demise: Titan Rune Protocol Gamma
-    QuestieDB.questData[78753] = {} -- Proof of Demise: Threats to Azeroth
 end
